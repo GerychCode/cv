@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react_portfolio
+    ports:
+      - "1488:1488"
+    restart: unless-stopped

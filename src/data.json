@@ -1,0 +1,58 @@
+{
+  "header": {
+    "logo": "Eduard Syvolap",
+    "nav": [
+      { "id": "about", "label": "Profile" },
+      { "id": "experience", "label": "Experience" },
+      { "id": "projects", "label": "Projects" }
+    ],
+    "contactBtn": "Get in touch"
+  },
+  "profile": {
+    "name": "Eduard Syvolap",
+    "title": "Yobar Pecar and Aptecar",
+    "image": "/images/IMG_6079 копия.jpg",
+    "bioText": "Motivated project manager with a unique \ncombination of development and \noperational management (department \nmanagement) experience. Experience in \nteam leadership, client negotiations, and \nproblem-solving. I bridge the gap between \nbusiness goals and technical execution. I am \nlooking for a company with which I can grow \nand contribute to mutual success.",
+    "bioHighlight": "I build systems that work, and designs that communicate.",
+    "phone": "+380997693339",
+    "email": "syvolap.eduard@gmail.com"
+  },
+  "skills": [
+    { "id": "1", "name": "Node.js", "description": "Backend Architecture & API Development", "icon": "server" },
+    { "id": "2", "name": "Databases", "description": "Optimization, SQL, PostgreSQL & Redis", "icon": "database" },
+    { "id": "3", "name": "Full-Stack", "description": "Frontend Development, UI/UX & Next.js", "icon": "layout" },
+    { "id": "4", "name": "Hardware", "description": "Microcontrollers, Arduino & ESP32 Integration", "icon": "hardware" },
+    { "id": "5", "name": "Leadership", "description": "Team Management & Operational Supervision", "icon": "users" },
+    { "id": "6", "name": "Negotiation", "description": "Key Account Management & B2B Relations", "icon": "message" },
+    { "id": "7", "name": "Crisis Mgmt", "description": "Crisis Resolution & Problem Solving", "icon": "activity" },
+    { "id": "8", "name": "Strategy", "description": "Strategic Planning & Process Improvement", "icon": "trending" }
+  ],
+  "experience": [
+    {
+      "id": "exp1",
+      "role": "Project Manager / Operations Manager",
+      "date": "2021 - Present",
+      "company": "IT & Management Operations",
+      "description": "Координація роботи розробників, дизайнерів та тестувальників. Організація робочих процесів, управління командою (5+ співробітників), ведення корпоративних клієнтів (Key Account Management) та вирішення кризових ситуацій. Технічний менеджмент серверної архітектури.",
+      "tags": ["Team Management", "Key Account", "Worksection CRM", "Crisis Management"]
+    },
+    {
+      "id": "exp2",
+      "role": "Full-Stack Developer",
+      "date": "2022 - Present",
+      "company": "Freelance / Parvenu RP",
+      "description": "Розробка backend-частини (Node.js, TypeScript), управління базами даних (PostgreSQL, Redis), використання ORM (Prisma) та розгортання через Docker. Створення інтерфейсів (HTML, CSS, JS, Next.js) та інтеграція Telegram-ботів на Telegraf.js. Розробка апаратних систем (Arduino).",
+      "tags": ["Node.js", "TypeScript", "PostgreSQL", "Next.js", "Docker"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj1",
+      "title": "Delivery route planner",
+      "category": "Full-stack",
+      "image": "/images/p1.png",
+      "link": "/logist"
+    }
+
+  ]
+}
