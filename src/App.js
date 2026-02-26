@@ -9,7 +9,7 @@ import {
   FiActivity,
   FiTrendingUp,
   FiArrowUpRight
-} from 'react-icons/fi';
+} from "react-icons/fi";
 import portfolioData from './data.json';
 import './App.css';
 
