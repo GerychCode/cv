@@ -8,22 +8,21 @@ RUN npm install
 
 COPY . .
 
-# Виконуємо збірку
+# Запускаємо білд
 RUN npm run build
+
+# ЦЕЙ РЯДОК ПОКАЖЕ НАМ ПРАВДУ В ЛОГАХ
+RUN ls -la /app
 
 # === ЕТАП 2: Роздача ===
 FROM node:20-alpine
 
 WORKDIR /app
-
 RUN npm install -g serve
 
-# ПЕРЕВІРКА:
-# Якщо у тебе Create React App — заміни /app/dist на /app/build
-# Якщо у тебе Vite — залиш /app/dist
+# Тимчасово закоментуй цей рядок, якщо білд знову впаде,
+# щоб просто побачити лог 'ls -la' з попереднього етапу
 COPY --from=build /app/dist ./dist
 
 EXPOSE 1488
-
-# Запускаємо сервер
 CMD ["serve", "-s", "dist", "-l", "1488"]
