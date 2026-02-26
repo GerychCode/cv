@@ -8,21 +8,21 @@ RUN npm install
 
 COPY . .
 
-# Запускаємо білд
+# Команда створює папку /app/build
 RUN npm run build
-
-# ЦЕЙ РЯДОК ПОКАЖЕ НАМ ПРАВДУ В ЛОГАХ
-RUN ls -la /app
 
 # === ЕТАП 2: Роздача ===
 FROM node:20-alpine
 
 WORKDIR /app
+
 RUN npm install -g serve
 
-# Тимчасово закоментуй цей рядок, якщо білд знову впаде,
-# щоб просто побачити лог 'ls -la' з попереднього етапу
-COPY --from=build /app/dist ./dist
+# Копіюємо з папки build (яку створив react-scripts)
+# і кладемо її в папку dist для сервера serve
+COPY --from=build /app/build ./dist
 
 EXPOSE 1488
+
+# Запускаємо сервер на порту 1488
 CMD ["serve", "-s", "dist", "-l", "1488"]
